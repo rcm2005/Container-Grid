@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    grid: 100%;
+
+}
+
+.container-grid{
+    /* transformando em grid */
+    display: grid;
+
+    /* declarar quantidade de colunas */
+    /* grid-template-columns: 100px, 100px; */
+
+
+    /* usando o repeat para fazer a mesma coisa */
+    /* grid-template-columns:repeat(4,20%); */
+    
+    
+    /* utilidade de medida fracionada */
+    /* aqui vai (fracionar em duas partes iguais) */
+    /* grid-template-columns: repeat(6,1fr); */
+
+    /* colocando regra de tamnho minimo e maximo */
+    /* tamanho minimo 150px e tamanho maximo de uma fração' */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+
+    
+}
